@@ -11,19 +11,64 @@ Code fragments:
     for(int i=0; i<n; i++) 
         sum++;
 
-Running Time => O(n)
+Running Time => O(n) => It'll loop for the same amount of times of n itself
 
 2. sum=0; 
     for(int i=0; i<n; i++) 
         for(int j=0; j<n; j++) 
             sum++;
 
-Running Time => O(n^2)
+Running Time => O(n^2) => It'll loop for 
 
 3. sum=0; 
     for(int i=0; i<n; i++) 
         for(int j=0; j<n*n; j++) 
             sum++;
             
+Running Time => O(n^3)
+
+
+4.sum=0; 
+    for(int i=0; i<n; i++) 
+        for(int j=0; j<i;j++) 
+            sum++;
+
 Running Time => O(n^2)
+
+
+5. sum=0; 
+    for(int i=0; i<n; i++) 
+        for(int j=0; j<i*i; j++) 
+            sum++;
+
+Running Time => O(n^2)
+
+
+6. sum=0; 
+    for(int i=1; i<n; i++) 
+        for(int j=1; j<i*i; j++) 
+            if (j%i==0) 
+                for(int k=0; k<j;k++) 
+                    sum++;
+
+Running Time => O(n^4)
+
+
+7. sum=0; 
+    for(int i=0; i<n; i++) 
+        for(int j=n; j>0; j/=2) 
+            sum++;
+
+Running Time => O(log n)
+
+
+8. sum=0; 
+    for(int i=0; i<n; i++) 
+        for(int j=i; j>0; j/=2) 
+            sum++;
+
+Running Time => O(log 2n)
+
+
+
 
