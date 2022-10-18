@@ -1,0 +1,15 @@
+The goal of this class is to get some intuition about these O-notation complexity classes. For each of the following programming fragments: 
+1.	Give an analysis of the running time in O-notation. Note: we can take the final value of sum as the running time. 
+2.	Implement the code in Java, and make a note of the running time for several values of n. It is generally a good idea to test n’s of different magnitudes to get a good idea what is going on, e.g. use powers of 2, or a sequence of Fibonacci numbers. 
+3.	Compare your analysis with the actual running times: if we estimated the run time to be in O(f(n)) then the values of the ratio runtime(n)/f(n) for increasing n can tell us the following: 
+•	if they diverge (go up arbitrarily for increasing n) then we underestimated the time complexity and our runtime is not in O(f(n)). 
+•	If the values converge to 0 then we overestimated the complexity. 
+•	If they stay approximately the same then our estimate is accurate. 
+Code fragments: 
+
+1. sum=0; 
+    for(int i=0; i<n; i++) 
+        sum++;
+
+Running Time => O(n)
+
