@@ -59,7 +59,7 @@ Running Time => O(n^4)
         for(int j=n; j>0; j/=2) 
             sum++;
 
-Running Time => O(log n)
+Running Time => O(n log n)
 
 
 8. sum=0; 
@@ -67,7 +67,7 @@ Running Time => O(log n)
         for(int j=i; j>0; j/=2) 
             sum++;
 
-Running Time => O(log 2n)
+Running Time => O(n log n)
 
 
 
